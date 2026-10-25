@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivi Alex Franco Silva | Global Infrastructure & Platform Leader</title>
+<meta name="description" content="Global infrastructure and platform leader with 23+ years across multi-cloud architecture, platform engineering, SRE, DevOps, DevSecOps and AI platforms.">
+<link rel="canonical" href="https://www.ivialex.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ivialex.com/">
+<meta property="og:title" content="Ivi Alex Franco Silva | Global Infrastructure & Platform Leader">
+<meta property="og:description" content="Multi-cloud architecture, platform engineering, SRE, DevSecOps and AI platforms. 23+ years.">
+<meta property="og:image" content="https://www.ivialex.com/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E2238; --navy-2:#1A3350; --line-dark:#2A4562; --border-dark:#4B6580;
+  --accent:#7FE3D4; --ink:#0E2238; --body:#33475B; --muted:#4A5B6C;
+  --soft:#C9D6E3; --bg:#F4F7F9; --white:#FFFFFF; --rule:#DCE4EB; --teal-bg:#E6F4F1;
+  --link:#0F7C70; --link-hover:#0A5C53;
+  --display:'Space Grotesk','Segoe UI',system-ui,sans-serif;
+  --text:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.6}
+a{color:var(--link)}a:hover{color:var(--link-hover)}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.01em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--navy);padding:10px 16px;border-radius:6px;font-weight:600;z-index:10}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:16px;padding:14px 24px;border-radius:6px;line-height:1.2}
+.btn-primary{background:var(--accent);color:var(--navy)}
+.btn-primary:hover{color:var(--navy);filter:brightness(1.06)}
+.btn-ghost{color:var(--white);border:1px solid var(--border-dark);padding:13px 23px}
+.btn-ghost:hover{color:var(--white);border-color:var(--accent)}
+
+/* header + hero */
+header{background:var(--navy);color:var(--white)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;padding:20px 0;flex-wrap:wrap}
+.brand{color:var(--white);text-decoration:none;font-family:var(--display);font-weight:700;font-size:20px}
+.brand:hover{color:var(--white)}
+.navlinks{display:flex;align-items:center;flex-wrap:wrap;gap:4px 24px}
+.navlink{color:#D6E1EC;text-decoration:none;font-size:15px;padding:12px 4px}
+.navlink:hover{color:var(--white)}
+.navlinks .btn{font-size:15px;padding:12px 20px}
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding:72px 0 64px}
+.hero-text{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.hero h1{margin:0;font-weight:700;font-size:64px;line-height:1.04;letter-spacing:-0.02em;max-width:13em}
+.lead{margin:0;font-size:20px;line-height:1.55;color:var(--soft);max-width:36em}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;padding-top:8px}
+.photo{flex:1 1 260px;display:flex;justify-content:center}
+.photo img{width:280px;height:340px;object-fit:cover;border-radius:10px;background:var(--navy-2);border:1px solid var(--border-dark)}
+
+/* career route */
+.route-sec{padding:8px 0 64px}
+.route-sec h2{margin:0 0 22px;font-weight:600;font-size:18px;color:var(--soft);letter-spacing:0}
+.route{display:flex;overflow-x:auto;list-style:none;margin:0;padding:0 0 8px}
+.route li{flex:1 0 132px;display:flex;flex-direction:column;gap:10px}
+.track{display:flex;align-items:center}
+.dot{flex:0 0 auto;width:12px;height:12px;border-radius:50%;background:var(--navy);border:2px solid #7F97AF;margin:3px 0}
+.seg{flex:1 1 auto;height:2px;background:#3A5673}
+.route .year{font-family:var(--display);font-weight:600;font-size:15px;color:var(--white)}
+.route .role{font-size:14px;line-height:1.4;color:#B7C6D6;padding-right:16px}
+.route li.prev .seg{background:var(--accent)}
+.route li.now .dot{width:18px;height:18px;background:var(--accent);border:3px solid var(--navy);margin:0}
+.route li.now .seg{background:transparent}
+.route li.now .year{color:var(--accent)}
+.route li.now .role{color:var(--white)}
+@media (prefers-reduced-motion:no-preference){.route li.now .dot{animation:pulse 2.4s ease-out 1s 3}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(127,227,212,.7)}100%{box-shadow:0 0 0 14px rgba(127,227,212,0)}}
+
+/* results */
+.results{background:var(--white);border-bottom:1px solid var(--rule)}
+.results .wrap{padding-top:40px;padding-bottom:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat b{font-family:var(--display);font-weight:700;font-size:40px;line-height:1.1}
+.stat span{font-size:15px;color:var(--muted)}
+
+/* sections */
+.section{padding-top:96px;padding-bottom:72px}
+.h2{margin:0 0 40px;font-weight:700;font-size:40px;line-height:1.15;max-width:18em}
+.cols{display:flex;flex-wrap:wrap;gap:48px}
+.col{flex:1 1 300px;display:flex;flex-direction:column;gap:12px;border-top:3px solid var(--navy);padding-top:20px}
+.col h3{margin:0;font-weight:600;font-size:22px}
+.col p{margin:0;color:var(--body)}
+.col .tools{font-size:15px;color:var(--muted)}
+
+.band{background:var(--white);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.band .wrap{padding-top:88px;padding-bottom:88px}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+.sec-head div{display:flex;flex-direction:column;gap:12px;max-width:40em}
+.sec-head h2{margin:0;font-weight:700;font-size:40px;line-height:1.15}
+.sec-head p{margin:0;color:var(--body)}
+.projects{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));column-gap:48px}
+.projects li{border-top:1px solid var(--rule);padding:24px 0;display:flex;flex-direction:column;gap:8px}
+.projects a{font-family:var(--display);font-weight:600;font-size:21px;color:var(--ink);text-decoration:none}
+.projects a:hover{color:var(--link);text-decoration:underline}
+.projects p{margin:0;color:var(--body)}
+.projects .tags{font-size:14px;color:var(--muted)}
+
+.jobs{list-style:none;margin:0;padding:0}
+.jobs li{display:flex;flex-wrap:wrap;gap:8px 32px;border-top:1px solid var(--rule);padding:22px 0}
+.jobs .when{flex:0 0 150px;font-family:var(--display);font-weight:600;color:var(--muted)}
+.jobs .what{flex:1 1 420px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.jobs .co{font-weight:600;font-size:19px}
+.jobs .roles{color:var(--body)}
+.jobs .note{font-size:15px;color:var(--muted)}
+.cv-link{display:inline-block;margin-top:28px;font-weight:600}
+
+.teaching{background:var(--teal-bg)}
+.teaching .wrap{padding-top:80px;padding-bottom:80px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
+.teaching h2{flex:1 1 380px;margin:0;font-weight:700;font-size:34px;line-height:1.2}
+.teaching div.txt{flex:1 1 440px;display:flex;flex-direction:column;gap:14px;color:#1F3347}
+.teaching p{margin:0}
+
+footer{background:var(--navy);color:var(--white)}
+footer .wrap{padding-top:88px;padding-bottom:40px;display:flex;flex-direction:column;gap:40px}
+.contact{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px}
+.contact div:first-child{display:flex;flex-direction:column;gap:14px;max-width:34em}
+.contact h2{margin:0;font-weight:700;font-size:44px;line-height:1.1}
+.contact p{margin:0;color:var(--soft)}
+.contact .ctas{padding-top:0}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--line-dark);padding-top:24px;font-size:14px;color:#9FB3C8}
+
+@media (max-width:720px){
+  .wrap{padding:0 20px}
+  .hero{padding:40px 0 48px;gap:36px}
+  .hero h1{font-size:42px}
+  .h2,.sec-head h2{font-size:32px}
+  .contact h2{font-size:34px}
+  .section{padding-top:64px;padding-bottom:48px}
+  .band .wrap{padding-top:64px;padding-bottom:64px}
+  .navlinks{gap:0 16px}
+  .jobs .when{flex-basis:100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Ivi Alex Franco Silva</a>
+      <div class="navlinks">
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#experience">Experience</a>
+        <a class="navlink" href="#teaching">Teaching</a>
+        <a class="navlink" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="cv.pdf">Download CV</a>
+      </div>
+    </nav>
+
+    <div class="hero" id="top">
+      <div class="hero-text">
+        <h1>I build the platforms engineering teams build on.</h1>
+        <p class="lead">Global infrastructure and platform leader with 23+ years across multi-cloud architecture, platform engineering, SRE, DevOps and DevSecOps. Today I lead the architecture of an enterprise AI platform on Azure and AWS and I'm building an Internal Developer Platform.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ivialexfrancosilva/">View LinkedIn</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="photo.jpg" alt="Ivi Alex Franco Silva" width="280" height="340">
+      </div>
+    </div>
+
+    <section class="route-sec" aria-labelledby="route-title">
+      <h2 id="route-title">From first commit to principal platform engineer</h2>
+      <ol class="route">
+        <li><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2003</span><span class="role">Development Analyst</span></li>
+        <li><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2006</span><span class="role">Development Coordinator</span></li>
+        <li><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2008</span><span class="role">Senior Functional Architect</span></li>
+        <li><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2016</span><span class="role">Technical Lead</span></li>
+        <li><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2017</span><span class="role">Lead DevOps Engineer</span></li>
+        <li><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2020</span><span class="role">Cloud, DevSecOps and SRE</span></li>
+        <li class="prev"><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2023</span><span class="role">Senior Cloud Architect and DevOps Consultant</span></li>
+        <li class="now"><div class="track"><span class="dot"></span><span class="seg"></span></div><span class="year">2024 to now</span><span class="role">Principal Platform Engineer</span></li>
+      </ol>
+    </section>
+  </div>
+</header>
+
+<main id="main">
+  <section class="results" aria-label="Results">
+    <div class="wrap">
+      <div class="stat"><b>99.95%</b><span>service availability on mission-critical platforms</span></div>
+      <div class="stat"><b>30%</b><span>faster deployment lead time with GitOps and CI/CD</span></div>
+      <div class="stat"><b>25–40%</b><span>infrastructure cost optimization</span></div>
+      <div class="stat"><b>7–10</b><span>engineers led and mentored</span></div>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="bring">
+    <h2 class="h2" id="bring">What I bring to a platform team</h2>
+    <div class="cols">
+      <div class="col">
+        <h3>Platform engineering and IDPs</h3>
+        <p>Golden paths, GitOps and self-service infrastructure, so product teams ship without waiting on tickets and get security and observability by default.</p>
+        <p class="tools">Kubernetes, Argo CD, Helm, Terraform, Terragrunt, GitHub Actions, Azure API Management</p>
+      </div>
+      <div class="col">
+        <h3>Multi-cloud architecture and reliability</h3>
+        <p>Highly available platforms on AWS, Azure and GCP, with SLOs and observability that alert on what users actually feel.</p>
+        <p class="tools">EKS, AKS, GKE, Prometheus, Grafana, Datadog, CloudWatch, Azure Monitor</p>
+      </div>
+      <div class="col">
+        <h3>AI platforms, security and cost</h3>
+        <p>Governed AI platforms and MLOps, shift-left security and cost-allocation guardrails, with clear policies for AI-assisted engineering.</p>
+        <p class="tools">Microsoft Foundry, Azure OpenAI, Amazon Bedrock, SageMaker AI, Trivy, SonarQube, HashiCorp Vault</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="projects-title">Open-source projects</h2>
+          <p>Small, documented and tested: built the way I want a platform team's tools to be.</p>
+        </div>
+        <a href="https://github.com/ivialex" style="font-weight:600">All repositories on GitHub</a>
+      </div>
+      <ul class="projects">
+        <li><a href="https://github.com/ivialex/platform-golden-path">platform-golden-path</a><p>A laptop-sized Internal Developer Platform: kind and Argo CD, plus a service template with security, metrics and SLOs built in.</p><p class="tags">Platform engineering, Kubernetes, Argo CD, GitOps</p></li>
+        <li><a href="https://github.com/ivialex/llm-gateway">llm-gateway</a><p>One API for Amazon Bedrock, Anthropic and Azure OpenAI, with per-team budgets, PII redaction and usage metrics.</p><p class="tags">AI platforms, Python, FastAPI, Prometheus</p></li>
+        <li><a href="https://github.com/ivialex/devsecops-pipeline-kit">devsecops-pipeline-kit</a><p>Reusable GitHub Actions for secret scanning, Trivy, SBOMs and keyless image signing: one security baseline for every repository.</p><p class="tags">DevSecOps, supply-chain security, GitHub Actions</p></li>
+        <li><a href="https://github.com/ivialex/terraform-multicloud-network">terraform-multicloud-network</a><p>The same secure network baseline as Terraform modules for AWS, Azure and GCP.</p><p class="tags">Terraform, AWS, Azure, GCP</p></li>
+        <li><a href="https://github.com/ivialex/slo-as-code">slo-as-code</a><p>Turns a short SLO spec into Prometheus multi-window, multi-burn-rate alerts.</p><p class="tags">SRE, SLOs, Prometheus</p></li>
+        <li><a href="https://github.com/ivialex/finops-tag-auditor">finops-tag-auditor</a><p>Fails Terraform pull requests that would create cloud resources without cost-allocation tags.</p><p class="tags">FinOps, Terraform, policy as code</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section" id="experience" aria-labelledby="exp-title">
+    <h2 class="h2" id="exp-title" style="margin-bottom:32px">Experience</h2>
+    <ul class="jobs">
+      <li><span class="when">2024 to now</span><div class="what"><span class="co">HP Inc.</span><span class="roles">Principal Platform Engineer</span><span class="note">Architecture of the enterprise AI platform and an Internal Developer Platform on Azure and AWS.</span></div></li>
+      <li><span class="when">2020 to now</span><div class="what"><span class="co">IVEX</span><span class="roles">Principal Cloud &amp; Platform Engineering Consultant, previously Senior Cloud Architect &amp; DevOps Consultant and Cloud, DevSecOps &amp; SRE Consultant</span><span class="note">My technology consultancy: cloud, platform engineering, DevOps and SRE engagements for enterprise clients.</span></div></li>
+      <li><span class="when">2021 to 2022</span><div class="what"><span class="co">RDI Software</span><span class="roles">Cloud Engineer and DevOps Specialist (contract)</span></div></li>
+      <li><span class="when">2020 to 2021</span><div class="what"><span class="co">AB InBev</span><span class="roles">Senior Cloud, DevSecOps &amp; SRE Engineer</span></div></li>
+      <li><span class="when">2020</span><div class="what"><span class="co">K2 Partnering Solutions</span><span class="roles">DevOps &amp; SRE Engineer (contract)</span></div></li>
+      <li><span class="when">2003 to 2020</span><div class="what"><span class="co">Thomson Reuters</span><span class="roles">Lead DevOps Engineer, Technical Lead, Senior Functional Architect, Development Coordinator and Development Analyst</span><span class="note">17 years, including Softway S.A. before its 2013 acquisition: from export-system development to leading DevOps transformation and AWS adoption.</span></div></li>
+      <li><span class="when">2011 to 2018</span><div class="what"><span class="co">Pontifical Catholic University of Campinas</span><span class="roles">University Professor, School of Systems Analysis</span></div></li>
+    </ul>
+    <a class="cv-link" href="cv.pdf">Download the full CV (PDF)</a>
+  </section>
+
+  <section class="teaching" id="teaching" aria-labelledby="teach-title">
+    <div class="wrap">
+      <h2 id="teach-title">Seven years teaching shaped how I lead engineers.</h2>
+      <div class="txt">
+        <p>From 2011 to 2018 I taught 16 undergraduate subjects across five programs at the Pontifical Catholic University of Campinas: databases, algorithms and programming, systems theory and emerging technologies.</p>
+        <p>Explaining the why behind a design is still how I mentor teams, write architecture decisions and bring business stakeholders along.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Let's talk about your platform.</h2>
+        <p>Open to infrastructure and platform leadership roles. English and Portuguese.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-primary" href="mailto:ivialex@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ivialexfrancosilva/">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/ivialex">GitHub</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>Paulínia, São Paulo, Brazil</span>
+      <span>ivialex@gmail.com</span>
+      <span>© 2026 Ivi Alex Franco Silva</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
