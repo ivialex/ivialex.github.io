@@ -1,1 +1,545 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivi Alex Franco Silva | Líder Global de Infraestrutura e Plataformas</title>
+<meta name="description" content="Líder global de infraestrutura e plataformas com mais de 23 anos de experiência em arquitetura multi-cloud, engenharia de plataformas, SRE, DevOps, DevSecOps e plataformas de IA.">
+<link rel="canonical" href="https://www.ivialex.com/pt/">
+<link rel="alternate" hreflang="en" href="https://www.ivialex.com/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.ivialex.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://www.ivialex.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ivialex.com/pt/">
+<meta property="og:title" content="Ivi Alex Franco Silva | Líder Global de Infraestrutura e Plataformas">
+<meta property="og:description" content="Arquitetura multi-cloud, engenharia de plataformas, SRE, DevSecOps e plataformas de IA. Mais de 23 anos.">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://www.ivialex.com/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A1220">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Ivi Alex Franco Silva","url":"https://www.ivialex.com/pt/","jobTitle":"Líder Global de Infraestrutura e Plataformas","email":"mailto:ivialex@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Paulínia","addressRegion":"São Paulo","addressCountry":"BR"},"alumniOf":["Fundação Getulio Vargas (FGV)","Pontifícia Universidade Católica de Campinas"],"sameAs":["https://www.linkedin.com/in/ivialexfrancosilva/","https://github.com/ivialex"]}
+</script>
+<style>
+:root{
+  --bg:#0A1220; --bg-2:#0E1A2E; --card:#111F35; --card-2:#152742; --line:#22385A; --line-2:#2E4A70;
+  --text:#E8EEF6; --soft:#B4C3D6; --muted:#8FA3BC;
+  --accent:#7FE3D4; --accent-2:#3FC8FF; --accent-ink:#06231F;
+  --display:'Space Grotesk','Segoe UI',system-ui,sans-serif;
+  --body:'Inter','Segoe UI',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}a:hover{color:#B6F1E8}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.015em;margin:0}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:10px;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:8px;font-weight:600;z-index:50}
+.skip:focus{left:10px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:20;background:rgba(10,18,32,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(46,74,112,.55)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-family:var(--display);font-weight:700;font-size:18px}
+.brand:hover{color:var(--text)}
+.brand .mark{width:30px;height:30px;border-radius:8px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px;font-family:var(--mono);font-weight:600}
+.menu{display:flex;align-items:center;gap:6px}
+.menu a.nl{color:var(--soft);text-decoration:none;font-size:15px;padding:10px 12px;border-radius:8px}
+.menu a.nl:hover,.menu a.nl.on{color:var(--text);background:rgba(127,227,212,.08)}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:10px;line-height:1.2;border:1px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{color:var(--accent-ink);background:#9BEBDF}
+.btn-ghost{color:var(--text);border-color:var(--line-2)}
+.btn-ghost:hover{color:var(--text);border-color:var(--accent)}
+.btn svg{width:18px;height:18px}
+.menu-toggle{display:none}
+@media (max-width:860px){
+  .menu{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;padding:12px 20px 20px;background:var(--bg-2);border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .menu a.nl{padding:14px 12px}
+  .menu .btn{justify-content:center;margin-top:8px}
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;border:1px solid var(--line-2);background:transparent;color:var(--text);cursor:pointer}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(46,74,112,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(46,74,112,.18) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 70% 70% at 70% 30%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 70% 30%,#000 30%,transparent 75%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.35fr .9fr;gap:56px;align-items:center;padding-top:84px;padding-bottom:72px}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--soft);border:1px solid var(--line-2);background:rgba(17,31,53,.7);padding:7px 14px;border-radius:999px;width:fit-content}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(127,227,212,.6);animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(127,227,212,.6)}100%{box-shadow:0 0 0 10px rgba(127,227,212,0)}}
+.hero-copy{display:flex;flex-direction:column;gap:24px}
+.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.03;font-weight:700;letter-spacing:-0.025em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{font-size:19px;color:var(--soft);max-width:36em}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:13px;color:var(--soft);border:1px solid var(--line-2);border-radius:8px;padding:5px 10px;background:rgba(17,31,53,.6)}
+.portrait{position:relative;justify-self:center;width:100%;max-width:380px}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:24px;border:1px solid var(--line-2)}
+.portrait .tag{position:absolute;left:-18px;bottom:28px;background:var(--card);border:1px solid var(--line-2);border-radius:14px;padding:12px 16px;display:flex;flex-direction:column;gap:2px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.portrait .tag b{font-family:var(--display);font-size:24px;line-height:1.1}
+.portrait .tag span{font-size:13px;color:var(--muted)}
+.portrait .tag2{left:auto;right:-14px;bottom:auto;top:28px}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-top:48px;gap:40px}.portrait{max-width:320px}.portrait .tag{left:-8px}.portrait .tag2{left:auto;right:-8px;top:16px}}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:-1px}
+.stat{background:var(--bg-2);padding:26px 24px;display:flex;flex-direction:column;gap:4px}
+.stat b{font-family:var(--display);font-size:38px;line-height:1.1;font-weight:700}
+.stat span{font-size:14px;color:var(--muted)}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- sections ---------- */
+section.block{padding:104px 0 0}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:40px}
+.head > div{display:flex;flex-direction:column;gap:12px;max-width:44em}
+.head h2{font-size:clamp(30px,4vw,44px);line-height:1.1;font-weight:700}
+.head p{color:var(--soft)}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s ease,transform .2s ease}
+.card:hover{border-color:var(--line-2)}
+.card h3{font-size:21px;font-weight:600}
+.card p{color:var(--soft);font-size:16px}
+.card .ico{width:44px;height:44px;border-radius:12px;background:rgba(127,227,212,.1);color:var(--accent);display:grid;place-items:center}
+.card .ico svg{width:24px;height:24px}
+.card .tools{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;padding-top:8px}
+.card .tools span{font-family:var(--mono);font-size:12px;color:var(--muted);background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.span-3{grid-column:span 3}.span-2{grid-column:span 2}.span-4{grid-column:span 4}
+.card.feature{background:linear-gradient(var(--card-2),var(--card))}
+@media (max-width:900px){.bento{grid-template-columns:1fr}.span-3,.span-2,.span-4{grid-column:auto}}
+
+/* case studies */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:14px}
+.case .k{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.case h3{font-size:19px;font-weight:600;line-height:1.3}
+.case .metric{font-family:var(--display);font-size:30px;font-weight:700;color:var(--accent);line-height:1.1}
+.case .metric small{display:block;font-family:var(--body);font-size:14px;font-weight:400;color:var(--soft);margin-top:4px}
+.case ul{margin:0;padding-left:18px;color:var(--soft);font-size:15px;display:flex;flex-direction:column;gap:6px}
+@media (max-width:980px){.cases{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.cases{grid-template-columns:1fr}}
+
+/* experience timeline */
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:180px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.job{display:grid;grid-template-columns:180px 1fr;gap:0 40px;padding:0 0 40px;position:relative}
+.job::before{content:"";position:absolute;left:174px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--line-2)}
+.job.now::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px rgba(127,227,212,.15)}
+.job .when{font-family:var(--mono);font-size:14px;color:var(--muted);padding-top:2px;padding-right:28px;text-align:right}
+.job .what{padding-left:8px;display:flex;flex-direction:column;gap:6px}
+.job h3{font-size:22px;font-weight:600}
+.job .role{color:var(--text);font-weight:500}
+.job .sub{font-size:15px;color:var(--muted)}
+.job ul{margin:6px 0 0;padding-left:18px;color:var(--soft);font-size:16px;display:flex;flex-direction:column;gap:6px}
+.job .roles{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.job .roles > div{border-left:2px solid var(--line);padding-left:14px}
+.job .roles .r{font-weight:500;color:var(--text)}
+.job .roles .d{font-family:var(--mono);font-size:13px;color:var(--muted)}
+@media (max-width:760px){
+  .timeline::before{left:6px}
+  .job{grid-template-columns:1fr;padding-left:32px}
+  .job::before{left:0}
+  .job .when{text-align:left;padding:0 0 4px}
+  .job .what{padding-left:0}
+}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--text);transition:border-color .2s ease,transform .2s ease}
+.proj:hover{color:var(--text);border-color:var(--accent);transform:translateY(-2px)}
+.proj .name{font-family:var(--mono);font-weight:500;font-size:16px;color:var(--accent);display:flex;align-items:center;gap:8px}
+.proj .name svg{width:18px;height:18px;flex:none}
+.proj p{color:var(--soft);font-size:15px}
+.proj .tags{margin-top:auto;font-family:var(--mono);font-size:12px;color:var(--muted)}
+@media (max-width:980px){.projects{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.projects{grid-template-columns:1fr}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px}
+.sk h3{font-size:16px;font-weight:600;font-family:var(--mono);color:var(--accent);letter-spacing:0}
+.sk div{display:flex;flex-wrap:wrap;gap:6px}
+.sk span{font-size:14px;color:var(--soft);background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:3px 9px}
+@media (max-width:980px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.skills{grid-template-columns:1fr}}
+
+/* teaching / education */
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.split .card ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px}
+.split .card li{display:flex;flex-direction:column;gap:2px}
+.split .card li b{font-weight:600}
+.split .card li span{color:var(--muted);font-size:15px}
+.quote{font-family:var(--display);font-size:24px;line-height:1.35;color:var(--text)}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+
+/* contact */
+.contact{margin:104px 0 0;border-top:1px solid var(--line);background:var(--bg-2)}
+.contact .wrap{padding-top:88px;padding-bottom:40px;display:flex;flex-direction:column;gap:48px}
+.contact .row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px}
+.contact h2{font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:700;max-width:12em}
+.contact p{color:var(--soft);margin-top:14px}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:24px;font-size:14px;color:var(--muted)}
+
+/* reveal on scroll (only when JS runs) */
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ivi Alex Franco Silva, voltar ao topo"><span class="mark" aria-hidden="true">IA</span>Ivi Alex Franco Silva</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a class="nl" href="#expertise">Especialidades</a>
+      <a class="nl" href="#work">Resultados</a>
+      <a class="nl" href="#experience">Experiência</a>
+      <a class="nl" href="#projects">Projetos</a>
+      <a class="nl" href="#about">Sobre</a>
+      <a class="nl" href="../" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a class="btn btn-primary" href="../cv.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Baixar CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="status"><i aria-hidden="true"></i>Aberto a posições de liderança em infraestrutura e plataformas</span>
+        <h1>Construo as plataformas que aceleram <em>times de engenharia</em>.</h1>
+        <p class="lead">Líder global de infraestrutura e plataformas com mais de 23 anos em arquitetura multi-cloud, engenharia de plataformas, SRE, DevOps e DevSecOps. Hoje lidero iniciativas de cloud, engenharia de plataformas e plataformas de IA na Azure e na AWS, incluindo Internal Developer Platforms (IDP).</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#work">Ver resultados</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ivialexfrancosilva/">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5m0 2a2 2 0 0 1 4 0v3"/></svg>LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/ivialex">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a>
+        </div>
+        <div class="chips" aria-label="Principais plataformas">
+          <span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">GCP</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">Argo CD</span><span class="chip">Azure OpenAI</span><span class="chip">Amazon Bedrock</span>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="../photo.jpg" alt="Foto de Ivi Alex Franco Silva" width="380" height="475">
+        <div class="tag tag2"><b>23+</b><span>anos em tecnologia</span></div>
+        <div class="tag"><b>9+ anos</b><span>em DevOps e cloud</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="stats rv" role="list" aria-label="Resultados">
+      <div class="stat" role="listitem"><b>99,95%</b><span>de disponibilidade em plataformas de missão crítica</span></div>
+      <div class="stat" role="listitem"><b>30%</b><span>de redução no lead time de deploy com GitOps e CI/CD</span></div>
+      <div class="stat" role="listitem"><b>25–40%</b><span>de otimização de custos de infraestrutura</span></div>
+      <div class="stat" role="listitem"><b>7–10</b><span>engenheiros liderados e mentorados</span></div>
+    </div>
+  </div>
+
+  <!-- ================= EXPERTISE ================= -->
+  <section class="block" id="expertise" aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow">Especialidades</span>
+          <h2 id="exp-h">O que levo para um time de plataforma</h2>
+          <p>Da arquitetura e dos padrões até os pipelines, clusters e guardrails que os tornam realidade.</p>
+        </div>
+      </div>
+      <div class="bento">
+        <article class="card feature span-4 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span>
+          <h3>Engenharia de plataformas e Internal Developer Platforms</h3>
+          <p>Golden paths, GitOps e infraestrutura self-service, para que os times de produto entreguem sem esperar por tickets, com segurança, observabilidade e tags de custo por padrão.</p>
+          <div class="tools"><span>Kubernetes</span><span>Argo CD</span><span>Helm</span><span>Docker</span><span>Terraform</span><span>Terragrunt</span><span>Terratest</span><span>Ansible</span><span>GitHub Actions</span><span>Azure DevOps</span><span>External Secrets Operator</span></div>
+        </article>
+        <article class="card span-2 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span>
+          <h3>Plataformas de IA e MLOps</h3>
+          <p>Acesso governado a modelos de fundação, RAG e pipelines de MLOps, com políticas claras para engenharia assistida por IA.</p>
+          <div class="tools"><span>Microsoft Foundry</span><span>Azure OpenAI</span><span>Bedrock</span><span>SageMaker AI</span><span>Azure ML</span><span>Azure AI Search</span><span>RAG</span><span>LLMOps</span></div>
+        </article>
+        <article class="card span-2 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 8a4 4 0 0 1-1 10H7Z"/></svg></span>
+          <h3>Arquitetura multi-cloud</h3>
+          <p>Landing zones, redes e workloads de alta disponibilidade na AWS, Azure e GCP.</p>
+          <div class="tools"><span>Control Tower</span><span>EKS</span><span>AKS</span><span>GKE</span><span>ECS Fargate</span><span>Lambda</span><span>Azure Functions</span><span>Azure APIM</span></div>
+        </article>
+        <article class="card span-2 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span>
+          <h3>SRE e observabilidade</h3>
+          <p>SLIs, SLOs e error budgets, com alertas sobre o que o usuário realmente sente e um plantão sustentável.</p>
+          <div class="tools"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Datadog</span><span>OpenTelemetry</span><span>CloudWatch</span><span>Azure Monitor</span><span>PagerDuty</span></div>
+        </article>
+        <article class="card span-2 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>DevSecOps e governança</h3>
+          <p>Segurança shift-left em todos os pipelines, segredos fora do código e evidências prontas para auditorias.</p>
+          <div class="tools"><span>Trivy</span><span>Snyk</span><span>SonarQube</span><span>Checkmarx</span><span>TruffleHog</span><span>Falco</span><span>Vault</span><span>SOC 2</span><span>ISO 27001</span></div>
+        </article>
+        <article class="card span-3 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <h3>FinOps e otimização de custos</h3>
+          <p>Right-sizing, compromissos de uso, autoscaling e políticas de tags que mantêm o gasto em cloud ligado ao valor de negócio: economia de 25–40% em ambientes de clientes.</p>
+          <div class="tools"><span>Right-sizing</span><span>Savings Plans</span><span>Reserved Instances</span><span>Autoscaling</span><span>Tags de alocação de custo</span><span>Políticas de ciclo de vida</span></div>
+        </article>
+        <article class="card span-3 rv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 11a3 3 0 1 0 0-6M21 20a6 6 0 0 0-4-5.6"/></svg></span>
+          <h3>Liderança e mentoria</h3>
+          <p>Estratégia de plataforma, roadmaps e padrões de engenharia; times de até 12 engenheiros liderados e 6 engenheiros plenos mentorados até posições sênior.</p>
+          <div class="tools"><span>Estratégia de plataforma</span><span>Roadmaps</span><span>Padrões de engenharia</span><span>Mentoria</span><span>Decisões de arquitetura</span><span>Scrum</span><span>Kanban</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SELECTED WORK ================= -->
+  <section class="block" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow">Resultados</span>
+          <h2 id="work-h">Resultados, não apenas ferramentas</h2>
+          <p>Alguns projetos, descritos por setor. Detalhes e referências sob consulta.</p>
+        </div>
+      </div>
+      <div class="cases">
+        <article class="case rv">
+          <span class="k">Turismo e hotelaria · AWS</span>
+          <h3>Modernização serverless de infraestrutura legada</h3>
+          <p class="metric">AWS nativo<small>ECS Fargate, bancos multi-AZ, backups automatizados e auto-scaling</small></p>
+          <ul><li>Infraestrutura 100% em Terraform, entregue via CI/CD no Azure DevOps.</li><li>Padrões reutilizados em projetos posteriores.</li></ul>
+        </article>
+        <article class="case rv">
+          <span class="k">Clientes enterprise · Kubernetes</span>
+          <h3>Plataforma GitOps em 6 clusters EKS</h3>
+          <p class="metric">99,9%<small>de disponibilidade em mais de 20 ambientes de produção e 2.000+ pods</small></p>
+          <ul><li>Argo CD e Helm em todos os deploys.</li><li>95% do provisionamento automatizado; falhas de configuração 88% menores.</li></ul>
+        </article>
+        <article class="case rv">
+          <span class="k">Clientes enterprise · IA generativa</span>
+          <h3>Assistentes de IA generativa e MLOps</h3>
+          <p class="metric">−60%<small>na latência de resposta ao cliente com assistentes virtuais</small></p>
+          <ul><li>Mais de 5 aplicações de IA generativa com Amazon Bedrock e Azure OpenAI.</li><li>Pipeline no SageMaker AI reduziu em 75% o time-to-market de modelos.</li></ul>
+        </article>
+        <article class="case rv">
+          <span class="k">Serviços de informação · DevOps</span>
+          <h3>Transformação DevOps em mais de 100 aplicações</h3>
+          <p class="metric">12 → 2 semanas<small>de ciclo de release para 30 desenvolvedores</small></p>
+          <ul><li>15 anos de histórico em CVS e 10 em SVN migrados para Git.</li><li>Novos ambientes em 4 horas em vez de 3 semanas.</li></ul>
+        </article>
+        <article class="case rv">
+          <span class="k">Bens de consumo · Segurança</span>
+          <h3>Segredos Zero Trust e governança de APIs</h3>
+          <p class="metric">15% → &lt;1%<small>de erros de configuração em releases com GitOps em 4 clusters AKS</small></p>
+          <ul><li>Cluster HashiCorp Vault de alta disponibilidade para credenciais de curta duração.</li><li>Mais de 100 APIs de microsserviços governadas no Azure API Management.</li></ul>
+        </article>
+        <article class="case rv">
+          <span class="k">Software · Microsserviços</span>
+          <h3>De monólito para mais de 25 microsserviços</h3>
+          <p class="metric">4 h → 5 min<small>de tempo de pipeline com GitHub Actions</small></p>
+          <ul><li>Migração Strangler Fig com Spring Boot e Kafka no Amazon MSK.</li><li>Zero credenciais de longa duração com IRSA.</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="block" id="experience" aria-labelledby="xp-h">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow">Experiência</span>
+          <h2 id="xp-h">Do primeiro commit à liderança de plataformas</h2>
+        </div>
+        <a class="btn btn-ghost" href="../cv.pdf">CV completo (PDF, inglês)</a>
+      </div>
+      <ol class="timeline">
+        <li class="job now rv">
+          <span class="when">2020 – hoje</span>
+          <div class="what">
+            <h3>IVEX</h3>
+            <span class="sub">Minha consultoria de tecnologia: projetos de cloud, engenharia de plataformas, DevOps e SRE para clientes enterprise.</span>
+            <div class="roles">
+              <div><span class="r">Principal Cloud &amp; Platform Engineering Consultant</span><br><span class="d">2024 – hoje</span>
+                <ul><li>Lidero projetos de arquitetura e transformação em cloud, orientando engenheiros de Cloud, DevOps e SRE e o plantão 24/7.</li><li>Landing zones na AWS, GitOps em Kubernetes, Azure API Management e lead time de deploy 30% menor.</li></ul></div>
+              <div><span class="r">Senior Cloud Architect &amp; DevOps Consultant</span><br><span class="d">2023 – 2024</span>
+                <ul><li>Plataformas multi-cloud na AWS e Azure; mais de 50 pipelines com 95% de builds bem-sucedidos e taxa de falha de mudanças abaixo de 5%.</li></ul></div>
+              <div><span class="r">Cloud, DevSecOps &amp; SRE Consultant</span><br><span class="d">2020 – 2023</span>
+                <ul><li>Ambientes AWS, Azure e GCP; mais de 200 dashboards de monitoramento que reduziram em 70% o tempo médio de detecção.</li></ul></div>
+            </div>
+          </div>
+        </li>
+        <li class="job rv">
+          <span class="when">2021 – 2022</span>
+          <div class="what"><h3>RDI Software</h3><span class="role">Cloud Engineer &amp; DevOps Specialist (contrato)</span>
+            <ul><li>Orientei a migração de um monólito Java para mais de 25 microsserviços; pipelines de 4 horas para 5 minutos.</li></ul></div>
+        </li>
+        <li class="job rv">
+          <span class="when">2020 – 2021</span>
+          <div class="what"><h3>AB InBev</h3><span class="role">Senior Cloud, DevSecOps &amp; SRE Engineer</span>
+            <ul><li>Contratado diretamente após seis meses no programa como consultor.</li><li>Cluster Vault para credenciais Zero Trust, mais de 100 APIs no Azure API Management e GitOps em 4 clusters AKS multirregião.</li></ul></div>
+        </li>
+        <li class="job rv">
+          <span class="when">2020</span>
+          <div class="what"><h3>K2 Partnering Solutions</h3><span class="role">DevOps &amp; SRE Engineer (contrato)</span>
+            <ul><li>Liderei a avaliação de 8 ferramentas de observabilidade e o piloto das ferramentas de DevSecOps.</li></ul></div>
+        </li>
+        <li class="job rv">
+          <span class="when">2003 – 2020</span>
+          <div class="what"><h3>Thomson Reuters</h3><span class="sub">Incluindo a Softway S.A. antes da aquisição em 2013</span>
+            <div class="roles">
+              <div><span class="r">Lead DevOps Engineer</span><br><span class="d">2017 – 2020</span>
+                <ul><li>Transformação DevOps para 30 desenvolvedores e mais de 100 aplicações; liderei um time de 5 engenheiros DevOps.</li></ul></div>
+              <div><span class="r">Technical Lead</span><br><span class="d">2016 – 2017</span>
+                <ul><li>Liderei um time de desenvolvimento de 12 engenheiros.</li></ul></div>
+              <div><span class="r">Senior Functional Architect · Development Coordinator · Development Analyst</span><br><span class="d">2003 – 2016</span>
+                <ul><li>Sistemas de comércio exterior (exportação), incluindo a integração com o Siscomex; transição do time de cascata para Scrum.</li></ul></div>
+            </div>
+          </div>
+        </li>
+        <li class="job rv">
+          <span class="when">2011 – 2018</span>
+          <div class="what"><h3>Pontifícia Universidade Católica de Campinas</h3><span class="role">Professor universitário, Faculdade de Análise de Sistemas</span>
+            <ul><li>16 disciplinas de graduação em cinco cursos.</li></ul></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="block" id="projects" aria-labelledby="pr-h">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow">Código aberto</span>
+          <h2 id="pr-h">Projetos no GitHub</h2>
+          <p>Pequenos, documentados e testados: do jeito que quero que as ferramentas de um time de plataforma sejam.</p>
+        </div>
+        <a class="btn btn-ghost" href="https://github.com/ivialex">Todos os repositórios</a>
+      </div>
+      <div class="projects">
+        <a class="proj rv" href="https://github.com/ivialex/platform-golden-path"><span class="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 3h8v13H4z"/></svg>platform-golden-path</span><p>Uma Internal Developer Platform que roda no notebook: kind e Argo CD, mais um template de serviço com segurança, métricas e SLOs prontos.</p><span class="tags">Kubernetes · Argo CD · GitOps</span></a>
+        <a class="proj rv" href="https://github.com/ivialex/llm-gateway"><span class="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 3h8v13H4z"/></svg>llm-gateway</span><p>Uma única API para Amazon Bedrock, Anthropic e Azure OpenAI, com orçamento por time, mascaramento de dados pessoais e métricas de uso.</p><span class="tags">AI platforms · Python · FastAPI</span></a>
+        <a class="proj rv" href="https://github.com/ivialex/devsecops-pipeline-kit"><span class="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 3h8v13H4z"/></svg>devsecops-pipeline-kit</span><p>GitHub Actions reutilizáveis para varredura de segredos, Trivy, SBOMs e assinatura de imagens sem chave.</p><span class="tags">DevSecOps · Supply chain · GitHub Actions</span></a>
+        <a class="proj rv" href="https://github.com/ivialex/terraform-multicloud-network"><span class="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 3h8v13H4z"/></svg>terraform-multicloud-network</span><p>A mesma base de rede segura como módulos Terraform para AWS, Azure e GCP.</p><span class="tags">Terraform · AWS · Azure · GCP</span></a>
+        <a class="proj rv" href="https://github.com/ivialex/slo-as-code"><span class="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 3h8v13H4z"/></svg>slo-as-code</span><p>Transforma uma especificação curta de SLO em alertas multi-window e multi-burn-rate no Prometheus.</p><span class="tags">SRE · SLOs · Prometheus</span></a>
+        <a class="proj rv" href="https://github.com/ivialex/finops-tag-auditor"><span class="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 3h8v13H4z"/></svg>finops-tag-auditor</span><p>Bloqueia pull requests de Terraform que criariam recursos de cloud sem tags de alocação de custo.</p><span class="tags">FinOps · Policy as code</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="block" aria-labelledby="sk-h">
+    <div class="wrap">
+      <div class="head rv"><div><span class="eyebrow">Ferramentas</span><h2 id="sk-h">Tecnologias com que trabalho</h2></div></div>
+      <div class="skills">
+        <div class="sk rv"><h3>Cloud</h3><div><span>AWS</span><span>Azure</span><span>GCP</span><span>Control Tower</span><span>EC2</span><span>S3</span><span>RDS Aurora</span><span>ECS Fargate</span><span>Lambda</span><span>App Services</span><span>Azure Functions</span></div></div>
+        <div class="sk rv"><h3>Containers &amp; GitOps</h3><div><span>Kubernetes</span><span>EKS</span><span>AKS</span><span>GKE</span><span>Docker</span><span>Helm</span><span>Argo CD</span><span>Istio</span></div></div>
+        <div class="sk rv"><h3>IaC e configuração</h3><div><span>Terraform</span><span>Terragrunt</span><span>Terratest</span><span>CloudFormation</span><span>AWS CDK</span><span>ARM</span><span>Ansible</span><span>Puppet</span></div></div>
+        <div class="sk rv"><h3>CI/CD</h3><div><span>GitHub Actions</span><span>Azure DevOps</span><span>GitLab CI</span><span>Jenkins</span><span>AWS CodePipeline</span><span>Blue-green</span><span>Canary</span></div></div>
+        <div class="sk rv"><h3>Segurança</h3><div><span>Trivy</span><span>Snyk</span><span>SonarQube</span><span>Checkmarx</span><span>Veracode</span><span>Black Duck</span><span>TruffleHog</span><span>Gitleaks</span><span>Falco</span><span>OWASP ZAP</span></div></div>
+        <div class="sk rv"><h3>Segredos e identidade</h3><div><span>HashiCorp Vault</span><span>AWS Secrets Manager</span><span>Azure Key Vault</span><span>External Secrets Operator</span><span>IRSA</span><span>Azure AD</span></div></div>
+        <div class="sk rv"><h3>Observabilidade</h3><div><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Tempo</span><span>Datadog</span><span>New Relic</span><span>Splunk</span><span>OpenTelemetry</span><span>CloudWatch</span><span>Azure Monitor</span><span>PagerDuty</span></div></div>
+        <div class="sk rv"><h3>IA e ML</h3><div><span>Microsoft Foundry</span><span>Azure OpenAI</span><span>Azure AI Search</span><span>Amazon Bedrock</span><span>SageMaker AI</span><span>Azure ML</span><span>OpenAI GPT</span><span>Anthropic Claude</span><span>RAG</span><span>GitHub Copilot</span></div></div>
+        <div class="sk rv"><h3>APIs e mensageria</h3><div><span>Azure API Management</span><span>Apigee</span><span>REST APIs</span><span>Kafka</span><span>Amazon MSK</span><span>RabbitMQ</span></div></div>
+        <div class="sk rv"><h3>Bancos de dados</h3><div><span>PostgreSQL</span><span>Amazon Aurora</span><span>Oracle</span><span>MySQL</span><span>MongoDB</span><span>Redis</span><span>Cosmos DB</span></div></div>
+        <div class="sk rv"><h3>Linguagens</h3><div><span>Python</span><span>Java</span><span>Bash</span><span>C#</span><span>Groovy</span><span>SQL</span><span>PL/SQL</span><span>JavaScript</span></div></div>
+        <div class="sk rv"><h3>Formas de trabalho</h3><div><span>Scrum</span><span>Kanban</span><span>Jira</span><span>Confluence</span><span>Git</span><span>Code review</span><span>ADRs</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="block" id="about" aria-labelledby="ab-h">
+    <div class="wrap">
+      <div class="head rv"><div><span class="eyebrow">Sobre</span><h2 id="ab-h">Professor, engenheiro, líder</h2></div></div>
+      <div class="split">
+        <article class="card rv">
+          <p class="quote">"Explicar o porquê de cada decisão de design continua sendo como eu mentoro times, registro decisões de arquitetura e trago as áreas de negócio junto."</p>
+          <p>De 2011 a 2018 lecionei 16 disciplinas de graduação em cinco cursos na Pontifícia Universidade Católica de Campinas: bancos de dados, algoritmos e programação, teoria de sistemas e tecnologias emergentes. Sete anos de docência moldaram a forma como lidero engenheiros.</p>
+        </article>
+        <article class="card rv">
+          <ul>
+            <li><b>Instrutor, Bootcamp Azure Cloud Computing</b><span>IGTI (hoje XP Educação) · 2021</span></li>
+            <li><b>Palestrante, "DevOps Training"</b><span>APETI, São José do Rio Preto · 2023</span></li>
+            <li><b>MBA em Administração de Empresas</b><span>Fundação Getulio Vargas (FGV) · 2006 – 2008</span></li>
+            <li><b>Engenharia de Computação</b><span>Pontifícia Universidade Católica de Campinas · 1998 – 2002</span></li>
+            <li><b>Idiomas</b><span>Português e inglês</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= CONTACT ================= -->
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="row rv">
+      <div>
+        <span class="eyebrow">Contato</span>
+        <h2>Vamos conversar sobre a sua plataforma.</h2>
+        <p>Aberto a posições de Diretor, Head e Principal em infraestrutura e engenharia de plataformas.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-primary" href="mailto:ivialex@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>ivialex@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ivialexfrancosilva/">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/ivialex">GitHub</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>Paulínia, São Paulo, Brasil</span>
+      <span>© 2026 Ivi Alex Franco Silva</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  // mobile menu
+  var t=document.querySelector('.menu-toggle'), m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');});
+  m.addEventListener('click',function(e){if(e.target.closest('a')){m.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+  // reveal on scroll
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  // highlight current section in the menu
+  var links=[].slice.call(document.querySelectorAll('.menu a.nl'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(function(s){so.observe(s)});
+})();
+</script>
+<!-- Visitor statistics (GoatCounter). Replace YOURCODE with your GoatCounter code and remove the comment markers to turn it on:
+<script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+</body>
+</html>
